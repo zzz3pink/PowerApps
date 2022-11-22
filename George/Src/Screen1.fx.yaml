@@ -1,7 +1,7 @@
 Screen1 As screen:
 
     Label1 As label:
-        Text: ="Test Git"
+        Text: ="George changed from git repos"
         X: =40
         Y: =40
         ZIndex: =1
