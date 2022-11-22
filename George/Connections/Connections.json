@@ -1,1 +1,106 @@
-{}
+{
+  "0e492f68-ae97-4670-a2d3-1c79d8e16d36": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Mail",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/fixes/sendmail-fix-build/1.0.1613.3110/sendmail/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sendmail"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Mail"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0e492f68-ae97-4670-a2d3-1c79d8e16d36"
+  },
+  "27695263-1073-4028-b943-ef41c2e2985f": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-09.southeastasia.logic.azure.com:443/workflows/b381e1c36995497ea4bbce8a039e51bb/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=3v1bGC5o9s4X2QL9lF6fs3v3DBWXQcdjjZxFAQIY29M",
+      "workflowEndpoint": "/subscriptions/b1b36c61-d929-4258-8ace-6d31523e9820/resourceGroups/018f64fb951b4da0990ddaee1511689c-f2da18e6daa3430e9c2af8d944c6f04d/providers/Microsoft.Logic/workflows/eaa75725-bf7c-4d8e-8fb7-29141bd1311d",
+      "workflowName": "eaa75725-bf7c-4d8e-8fb7-29141bd1311d",
+      "workflowPath": "/subscriptions/b1b36c61-d929-4258-8ace-6d31523e9820/resourceGroups/018f64fb951b4da0990ddaee1511689c-f2da18e6daa3430e9c2af8d944c6f04d/providers/Microsoft.Logic/workflows/eaa75725-bf7c-4d8e-8fb7-29141bd1311d"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "e921cfe5-6db9-4a91-b86f-fbbb34848ecf": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "eaa75725-bf7c-4d8e-8fb7-29141bd1311d"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "e921cfe5-6db9-4a91-b86f-fbbb34848ecf"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "eaa75725-bf7c-4d8e-8fb7-29141bd1311d"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerApp->Listrows"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "e921cfe5-6db9-4a91-b86f-fbbb34848ecf"
+    },
+    "dependents": [],
+    "id": "27695263-1073-4028-b943-ef41c2e2985f"
+  },
+  "5e27d6e4-108c-444c-828c-5c8a67182c8b": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1610-greyhound-localization-RelayFix/1.0.1610.3091/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://zzz3pink.sharepoint.com/sites/zzz3pink": {
+        "dataSources": {
+          "GeorgeL1": {
+            "tableName": "136fb2f2-44b4-4a47-9d64-8350d485ca23"
+          },
+          "GeorgeL2": {
+            "tableName": "a1637fad-4d7a-472e-936f-27cf142fdf2c"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "GeorgeL1",
+      "GeorgeL2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5e27d6e4-108c-444c-828c-5c8a67182c8b"
+  },
+  "e921cfe5-6db9-4a91-b86f-fbbb34848ecf": {
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "token:grantType": "code"
+    },
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1609/1.0.1609.3084/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "27695263-1073-4028-b943-ef41c2e2985f"
+    ],
+    "id": "e921cfe5-6db9-4a91-b86f-fbbb34848ecf"
+  }
+}

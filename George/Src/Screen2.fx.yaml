@@ -1,51 +1,44 @@
-Screen1 As screen:
+Screen2 As screen:
 
-    Label1 As label:
-        Text: ="Test Git"
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Items: =GeorgeL1
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        Width: =393
         X: =40
         Y: =40
         ZIndex: =1
 
-    "galAccounts As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        Height: =620
-        Items: =Accounts
-        Layout: =Layout.Vertical
-        TemplatePadding: =0
-        TemplateSize: =Min(104, Self.Height - 60)
-        Width: =561
-        X: =40
-        Y: =108
-        ZIndex: =1
-
-        Title2 As label:
+        Title5 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Account Name'
+            Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
             Y: =16
             ZIndex: =1
 
-        Subtitle2 As label:
+        Subtitle5 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Main Phone'
+            Text: =ThisItem.'Created By'.DisplayName
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =Title2.Y + Title2.Height + 4
+            Y: =Title5.Y + Title5.Height + 4
             ZIndex: =2
 
-        NextArrow2 As icon.ChevronRight:
+        NextArrow5 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -61,28 +54,10 @@ Screen1 As screen:
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =3
 
-        Separator2 As rectangle:
+        Separator5 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
-
-    Button1 As button:
-        Text: ="George"
-        X: =168
-        Y: =40
-        ZIndex: =2
-
-    DatePicker1 As datepicker:
-        X: =418
-        Y: =40
-        ZIndex: =3
-
-    Button2 As button:
-        OnSelect: ='PowerApp->Listrows'.Run()
-        Text: ="FLow"
-        X: =963
-        Y: =40
-        ZIndex: =4
 
