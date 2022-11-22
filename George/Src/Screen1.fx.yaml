@@ -1,9 +1,11 @@
 Screen1 As screen:
 
     Label1 As label:
-        Text: ="George changed v2 from git repos"
-        X: =40
-        Y: =40
+        Height: =78
+        Text: ="George changed v3 from git repos"
+        Width: =435
+        X: =779
+        Y: =311
         ZIndex: =1
 
     "galAccounts As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
